@@ -1,0 +1,3 @@
+*.ini
+DB_config.py
+*.pyc
