@@ -11,6 +11,7 @@ class DataBase:
         self.db_config = read_db_config()
 
         try:
+            # try make connection
             self.cnx = mysql.connector.connect(**self.db_config)
 
             if(self.cnx.is_connected()):
@@ -158,6 +159,7 @@ class DataBase:
         self.cnx.close()
 
 
+# Some testing
 # if __name__ == '__main__':
 #     db = DataBase()
     # db.DeleteTableData()
